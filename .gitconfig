@@ -1,0 +1,9 @@
+[user]
+        email = ouji.info@gmail.com
+        name = hiroki
+
+[alias]
+    st = status
+
+[core]
+        excludesfile = /Users/hirokiokumura/.gitignore_global
