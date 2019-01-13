@@ -1,6 +1,8 @@
+tap "go-delve/delve"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "superbrothers/zsh-kubectl-prompt", "git://github.com/superbrothers/zsh-kubectl-prompt.git"
 
 brew "go"
 brew "dep"
@@ -17,6 +19,8 @@ brew "tree"
 brew "wget"
 brew "yarn"
 brew "zsh"
+brew "go-delve/delve/delve"
+brew "superbrothers/zsh-kubectl-prompt/zsh-kubectl-prompt
 
 cask "minikube"
 cask "virtualbox"
