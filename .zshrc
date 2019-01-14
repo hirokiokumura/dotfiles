@@ -25,6 +25,11 @@ if [ -f "${HOME}/google-cloud-sdk/path.zsh.inc" ]; then source "${HOME}/google-c
 
 if [ -f "${HOME}/google-cloud-sdk/completion.zsh.inc" ]; then source "${HOME}/google-cloud-sdk/completion.zsh.inc"; fi
 
+# alias
+alias pull='git pull'
+alias push='git push'
+alias st='git status'
+
 # go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin

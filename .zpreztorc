@@ -74,6 +74,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
 # zstyle ':prezto:module:git:status:ignore' submodules 'all'
+zstyle ':prezto:module:git:alias' skip 'yes'
 zstyle ':prezto:module:git:info:keys' format \
   'prompt'  ' git(%b)' \
   'rprompt' '[%R]'
