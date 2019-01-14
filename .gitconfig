@@ -1,13 +1,19 @@
 [user]
-        email = ouji.info@gmail.com
-        name = hirokiokumura 
+    email = ouji.info@gmail.com
+    name = hirokiokumura
 
 [alias]
     st = status
     ss = status -s
     co = checkout
+    br = branch
+    cm = commit
+    df = diff
+    gr = grep
+    sh = show
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 
 [core]
-        excludesfile = /Users/hirokiokumura/.gitignore_global
+    excludesfile = /Users/hirokiokumura/.gitignore_global
+    editor = vim
