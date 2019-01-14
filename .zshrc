@@ -1,3 +1,12 @@
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
+#lsコマンドの色を変更
+export LSCOLORS=gxfxcxdxbxegedabagacad
+
 HISTFILE=~/.zsh_history #履歴ファイルの設定
 HISTSIZE=1000000 # メモリに保存される履歴の件数。(保存数だけ履歴を検索できる)
 SAVEHIST=1000000 # ファイルに何件保存するか
