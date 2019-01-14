@@ -12,6 +12,7 @@ FILELIST="
 .vimrc
 Brewfile
 .gitconfig
+.gitignore_global
 "
 
 for FILE in ${FILELIST};
