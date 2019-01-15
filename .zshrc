@@ -16,6 +16,9 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 HISTFILE=~/.zsh_history #履歴ファイルの設定
 HISTSIZE=1000000 # メモリに保存される履歴の件数。(保存数だけ履歴を検索できる)
 SAVEHIST=1000000 # ファイルに何件保存するか
+setopt no_beep
+setopt auto_cd # ディレクトリ移動（cd）を便利にする
+setopt auto_pushd # $ cd - でTabを押すと、ディレクトリの履歴が見れる
 setopt extended_history # 実行時間とかも保存する
 setopt share_history # 別のターミナルでも履歴を参照できるようにする
 setopt hist_ignore_all_dups # 過去に同じ履歴が存在する場合、古い履歴を削除し重複しない 
