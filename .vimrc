@@ -1,4 +1,8 @@
+" 行番号を表示
 set nu
+" 現在の行を強調表示
+set cursorline
+" TABキーを押した際にタブ文字の代わりにスペースを入れる
 set expandtab
 set ts=4
 set list
