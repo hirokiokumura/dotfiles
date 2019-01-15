@@ -4,6 +4,12 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
+
+autoload -U compinit
+compinit -u
+
+autoload -Uz colors; colors
 #lsコマンドの色を変更
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
@@ -24,6 +30,19 @@ setopt inc_append_history # 履歴をインクリメンタルに追加
 if [ -f "${HOME}/google-cloud-sdk/path.zsh.inc" ]; then source "${HOME}/google-cloud-sdk/path.zsh.inc"; fi
 
 if [ -f "${HOME}/google-cloud-sdk/completion.zsh.inc" ]; then source "${HOME}/google-cloud-sdk/completion.zsh.inc"; fi
+
+# [【GCE】【gcloud】いま、どのプロジェクトなのかbashのプロンプトに表示する - cameong’s blog](http://cameong.hatenablog.com/entry/2016/07/29/123037)
+function gcp_info {
+    if [ -f ~/.config/gcloud/active_config ]; then
+        cat  ~/.config/gcloud/active_config
+    else
+        echo "--"
+    fi
+}
+
+# [superbrothers/zsh-kubectl-prompt: Display information about the kubectl current context and namespace in zsh prompt.](https://github.com/superbrothers/zsh-kubectl-prompt)
+source /usr/local/etc/zsh-kubectl-prompt/kubectl.zsh
+RPROMPT='%{$fg[green]%}(gcloud:$(gcp_info))%{$fg[yellow]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
 
 # go
 export GOPATH=$HOME/go
