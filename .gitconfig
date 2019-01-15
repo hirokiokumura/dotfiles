@@ -17,3 +17,5 @@
 [core]
     excludesfile = /Users/hirokiokumura/.gitignore_global
     editor = vim
+[ghq]
+    root = ~/Develop
