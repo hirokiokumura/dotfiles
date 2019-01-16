@@ -78,3 +78,6 @@ function ghql() {
 
 zle -N ghql
 bindkey '^g' ghql
+
+# alias
+alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
