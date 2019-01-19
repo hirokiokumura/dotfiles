@@ -81,3 +81,6 @@ bindkey '^g' ghql
 
 # alias
 alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
+
+# java
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
