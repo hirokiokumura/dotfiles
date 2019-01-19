@@ -5,6 +5,7 @@ tap "homebrew/core"
 tap "shyiko/kubesec"
 tap "superbrothers/zsh-kubectl-prompt", "git://github.com/superbrothers/zsh-kubectl-prompt.git"
 
+brew "apache-spark"
 brew "go"
 brew "dep"
 brew "ghq"
