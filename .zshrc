@@ -84,3 +84,8 @@ alias gh='hub browse $(ghq list | peco | cut -d "/" -f 2,3)'
 
 # java
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+# kubernetes
+source <(kubectl completion zsh)
+alias k=kubectl
+complete -o default -F __start_kubectl k
