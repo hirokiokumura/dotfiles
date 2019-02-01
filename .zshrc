@@ -48,8 +48,8 @@ source /usr/local/etc/zsh-kubectl-prompt/kubectl.zsh
 RPROMPT='%{$fg[green]%}(gcloud:$(gcp_info))%{$fg[yellow]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
 
 # go
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+export PATH="$HOME/.goenv/bin:$PATH"
+eval "$(goenv init -)"
 
 # node.js
 export PATH=$HOME/.nodebrew/current/bin:$PATH
