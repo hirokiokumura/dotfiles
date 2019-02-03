@@ -1,3 +1,5 @@
+tap "bazelbuild/tap", pin: true
+tap "golangci/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
@@ -25,6 +27,8 @@ brew "tree"
 brew "wget"
 brew "yarn"
 brew "zsh"
+brew "bazelbuild/tap/bazel"
+brew "golangci/tap/golangci-lint"
 brew "shyiko/kubesec/kubesec"
 brew "superbrothers/zsh-kubectl-prompt/zsh-kubectl-prompt"
 
