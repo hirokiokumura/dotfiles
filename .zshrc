@@ -49,6 +49,7 @@ RPROMPT='%{$fg[green]%}(gcloud:$(gcp_info))%{$fg[yellow]%}($ZSH_KUBECTL_PROMPT)%
 
 # go
 export PATH="$HOME/.goenv/bin:$PATH"
+export GO111MODULE=auto
 eval "$(goenv init -)"
 
 # node.js
