@@ -89,3 +89,6 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 source <(kubectl completion zsh)
 alias k=kubectl
 complete -o default -F __start_kubectl k
+
+# adb
+export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
