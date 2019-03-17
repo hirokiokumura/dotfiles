@@ -7,6 +7,8 @@ tap "homebrew/core"
 tap "shyiko/kubesec"
 tap "superbrothers/zsh-kubectl-prompt", "git://github.com/superbrothers/zsh-kubectl-prompt.git"
 
+brew "awscli", link: false
+brew "amazon-ecs-cli"
 brew "apache-spark"
 brew "ghq"
 brew "git"
